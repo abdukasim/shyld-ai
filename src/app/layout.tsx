@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Navbar from "./components/ui/navbar";
-
+import Footer from "./components/ui/footer";
 const sfui = localFont({
   src: "./fonts/SF-UI-Display-Regular.ttf",
   variable: "--font-sfui",
@@ -23,6 +23,7 @@ export default function RootLayout({
       <body className={`${sfui.className} antialiased`}>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

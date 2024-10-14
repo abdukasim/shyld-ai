@@ -8,6 +8,7 @@ interface GradientButtonProps {
   outlined?: boolean;
   textColor?: string;
   children: React.ReactNode;
+  circular?: boolean;
 }
 
 const GradientButton: React.FC<GradientButtonProps> = ({
@@ -16,6 +17,7 @@ const GradientButton: React.FC<GradientButtonProps> = ({
   isLink = true,
   outlined = false,
   textColor = "black",
+  circular = false,
   children,
 }) => {
   const gradientStyle = outlined
@@ -24,7 +26,9 @@ const GradientButton: React.FC<GradientButtonProps> = ({
         background: "linear-gradient(135deg, #00FCFF 0%, #24689B 100%)",
       };
 
-  const commonClasses = `px-10 py-3 rounded-full hover:opacity-90 transition-opacity ${
+  const commonClasses = `${
+    circular ? "p-[10px]" : "px-10 py-3"
+  } rounded-full hover:opacity-90 transition-opacity ${
     outlined ? `gradient-outline text-${textColor}` : `text-${textColor}`
   }`;
 
