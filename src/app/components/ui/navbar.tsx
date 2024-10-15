@@ -5,7 +5,7 @@ import GradientButton from "@/app/components/ui/gradient-button";
 
 const Navbar = () => {
   return (
-    <nav className="bg-[#121212] text-white p-4">
+    <nav className="bg-[#121212] text-white p-4 z-50">
       <div className="container mx-auto flex justify-between items-center">
         <Link href="/" className="text-xl font-bold relative w-[132px] h-5">
           <Image src={logo} alt="SHYLD" fill />

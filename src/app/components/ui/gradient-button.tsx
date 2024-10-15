@@ -20,27 +20,23 @@ const GradientButton: React.FC<GradientButtonProps> = ({
   circular = false,
   children,
 }) => {
-  const gradientStyle = outlined
-    ? {}
-    : {
-        background: "linear-gradient(135deg, #00FCFF 0%, #24689B 100%)",
-      };
+  const gradientClasses = outlined
+    ? ""
+    : "bg-gradient-to-br from-[#00FCFF] to-[#24689B] hover:bg-none hover:bg-white transition-all duration-300";
 
-  const commonClasses = `${
-    circular ? "p-[10px]" : "px-10 py-3"
-  } rounded-full hover:opacity-90 transition-opacity ${
+  const commonClasses = `${circular ? "p-[10px]" : "px-10 py-3"} rounded-full ${
     outlined ? `gradient-outline text-${textColor}` : `text-${textColor}`
-  }`;
+  } ${gradientClasses}`;
 
   if (isLink) {
     return (
-      <Link href={href} className={commonClasses} style={gradientStyle}>
+      <Link href={href} className={commonClasses}>
         {children}
       </Link>
     );
   } else {
     return (
-      <button onClick={onClick} className={commonClasses} style={gradientStyle}>
+      <button onClick={onClick} className={commonClasses}>
         {children}
       </button>
     );
