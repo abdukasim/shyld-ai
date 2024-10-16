@@ -26,6 +26,15 @@ body {
   }
 }
 
+@layer components {
+  .title {
+    @apply text-[32px] font-bold leading-9;
+  }
+  .paragraph {
+    @apply text-2xl font-light;
+  }
+}
+
 .gradient-outline {
   background: transparent;
   position: relative;
