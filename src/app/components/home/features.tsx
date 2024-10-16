@@ -16,7 +16,7 @@ const Features = () => {
             />
             <div className="absolute inset-0 bg-black opacity-50 transition-opacity duration-300 group-hover:opacity-0"></div>
             <div
-              className="absolute top-[280px] left-9 w-[42px] h-[42px] bg-white rounded-full flex items-center justify-center transition-transform duration-300 hover:scale-125 -rotate-[25deg] z-10"
+              className="absolute top-[280px] left-9 w-[42px] h-[42px] bg-white rounded-full flex items-center justify-center transition-transform duration-300 hover:scale-125 group-hover:scale-125 -rotate-[25deg] z-10"
               style={{
                 boxShadow: "0px 0px 24px 0px #00FCFF",
               }}
@@ -30,7 +30,7 @@ const Features = () => {
               </div>
             </div>
             <div
-              className="absolute top-[280px] left-[290px] w-[42px] h-[42px] bg-white rounded-full flex items-center justify-center transition-transform duration-300 hover:scale-125 -rotate-[25deg] z-10"
+              className="absolute top-[280px] left-[290px] w-[42px] h-[42px] bg-white rounded-full flex items-center justify-center transition-transform duration-300 hover:scale-125 group-hover:scale-125 -rotate-[25deg] z-10"
               style={{
                 boxShadow: "0px 0px 24px 0px #00FCFF",
               }}
@@ -132,17 +132,19 @@ const Features = () => {
         </svg>
 
         <div className="relative">
-          <div className="relative overflow-hidden rounded-2xl shadow-lg group -scale-x-100">
-            <Image
-              src="/images/little-child-in-hospital-room.jpeg"
-              alt="A little child in a hospital room"
-              className="h-[600px] object-cover object-left transition-transform duration-300 group-hover:scale-110"
-              width={500}
-              height={600}
-            />
+          <div className="relative overflow-hidden rounded-2xl shadow-lg group">
+            <div className="-scale-x-100">
+              <Image
+                src="/images/little-child-in-hospital-room.jpeg"
+                alt="A little child in a hospital room"
+                className="h-[600px] object-cover object-left transition-transform duration-300 group-hover:scale-110"
+                width={500}
+                height={600}
+              />
+            </div>
             <div className="absolute inset-0 bg-black opacity-50 transition-opacity duration-300 group-hover:opacity-0"></div>
             <div
-              className="absolute top-6 right-6 w-[42px] h-[42px] bg-white rounded-full flex items-center justify-center transition-transform duration-300 hover:scale-125 -rotate-[25deg] z-20"
+              className="absolute top-6 left-6 w-[42px] h-[42px] bg-white rounded-full flex items-center justify-center transition-transform duration-300 hover:scale-125 group-hover:scale-125 -rotate-[25deg]  z-20"
               style={{
                 boxShadow: "0px 0px 24px 0px #00FCFF",
               }}
