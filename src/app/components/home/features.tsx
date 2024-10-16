@@ -6,39 +6,42 @@ const Features = () => {
     <section className="h-max px-[108px] space-y-[180px] max-w-[1440px] mx-auto">
       <div className="flex flex-col md:flex-row items-center justify-between  pt-[180px] h-max">
         <div className="relative">
-          <Image
-            src="/images/hospital-room-interior.jpeg"
-            alt="Modern hospital room with smart features"
-            className="rounded-2xl shadow-lg h-[600px] object-cover object-left"
-            width={500}
-            height={600}
-          />
-          <div
-            className="absolute top-[280px] left-9 w-[42px] h-[42px] bg-white rounded-full flex items-center justify-center transition-transform duration-300 hover:scale-125 -rotate-[25deg]"
-            style={{
-              boxShadow: "0px 0px 24px 0px #00FCFF",
-            }}
-          >
-            <div className="w-[32px] h-[32px] relative">
-              <Image
-                src="/images/product-image.png"
-                alt="Modern hospital room with smart features"
-                fill
-              />
+          <div className="relative overflow-hidden rounded-2xl shadow-lg group">
+            <Image
+              src="/images/hospital-room-interior.jpeg"
+              alt="Modern hospital room with smart features"
+              className="h-[600px] object-cover object-left transition-transform duration-300 group-hover:scale-110"
+              width={500}
+              height={600}
+            />
+            <div className="absolute inset-0 bg-black opacity-50 transition-opacity duration-300 group-hover:opacity-0"></div>
+            <div
+              className="absolute top-[280px] left-9 w-[42px] h-[42px] bg-white rounded-full flex items-center justify-center transition-transform duration-300 hover:scale-125 -rotate-[25deg] z-10"
+              style={{
+                boxShadow: "0px 0px 24px 0px #00FCFF",
+              }}
+            >
+              <div className="w-[32px] h-[32px] relative">
+                <Image
+                  src="/images/product-image.png"
+                  alt="Modern hospital room with smart features"
+                  fill
+                />
+              </div>
             </div>
-          </div>
-          <div
-            className="absolute top-[280px] left-[290px] w-[42px] h-[42px] bg-white rounded-full flex items-center justify-center transition-transform duration-300 hover:scale-125 -rotate-[25deg]"
-            style={{
-              boxShadow: "0px 0px 24px 0px #00FCFF",
-            }}
-          >
-            <div className="w-[32px] h-[32px] relative">
-              <Image
-                src="/images/product-image.png"
-                alt="Modern hospital room with smart features"
-                fill
-              />
+            <div
+              className="absolute top-[280px] left-[290px] w-[42px] h-[42px] bg-white rounded-full flex items-center justify-center transition-transform duration-300 hover:scale-125 -rotate-[25deg] z-10"
+              style={{
+                boxShadow: "0px 0px 24px 0px #00FCFF",
+              }}
+            >
+              <div className="w-[32px] h-[32px] relative">
+                <Image
+                  src="/images/product-image.png"
+                  alt="Modern hospital room with smart features"
+                  fill
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -129,25 +132,28 @@ const Features = () => {
         </svg>
 
         <div className="relative">
-          <Image
-            src="/images/little-child-in-hospital-room.jpeg"
-            alt="A little child in a hospital room"
-            className="rounded-2xl shadow-lg h-[600px] object-cover object-left -scale-x-100"
-            width={500}
-            height={600}
-          />
-          <div
-            className="absolute top-6 left-6 w-[42px] h-[42px] bg-white rounded-full flex items-center justify-center transition-transform duration-300 hover:scale-125 -rotate-[25deg] z-20"
-            style={{
-              boxShadow: "0px 0px 24px 0px #00FCFF",
-            }}
-          >
-            <div className="w-[32px] h-[32px] relative">
-              <Image
-                src="/images/product-image.png"
-                alt="Modern hospital room with smart features"
-                fill
-              />
+          <div className="relative overflow-hidden rounded-2xl shadow-lg group -scale-x-100">
+            <Image
+              src="/images/little-child-in-hospital-room.jpeg"
+              alt="A little child in a hospital room"
+              className="h-[600px] object-cover object-left transition-transform duration-300 group-hover:scale-110"
+              width={500}
+              height={600}
+            />
+            <div className="absolute inset-0 bg-black opacity-50 transition-opacity duration-300 group-hover:opacity-0"></div>
+            <div
+              className="absolute top-6 right-6 w-[42px] h-[42px] bg-white rounded-full flex items-center justify-center transition-transform duration-300 hover:scale-125 -rotate-[25deg] z-20"
+              style={{
+                boxShadow: "0px 0px 24px 0px #00FCFF",
+              }}
+            >
+              <div className="w-[32px] h-[32px] relative">
+                <Image
+                  src="/images/product-image.png"
+                  alt="Modern hospital room with smart features"
+                  fill
+                />
+              </div>
             </div>
           </div>
         </div>
