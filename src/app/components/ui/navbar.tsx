@@ -2,7 +2,6 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import logo from "@/public/svg/shyld-ai-logo.svg";
 import GradientButton from "@/app/components/ui/gradient-button";
 
 const Navbar = () => {
@@ -18,7 +17,7 @@ const DesktopNav = () => {
   return (
     <div className="container mx-auto hidden lg:flex justify-between items-center">
       <Link href="/" className="text-xl font-bold relative w-[132px] h-5">
-        <Image src={logo} alt="SHYLD" fill />
+        <Image src="/svg/shyld-ai-logo.svg" alt="SHYLD" fill />
       </Link>
       <div className="space-x-12 font-light text-xl">
         <Link href="/product" className="hover:text-gray-300">
@@ -50,7 +49,7 @@ const MobileNav = () => {
   return (
     <div className="container mx-auto flex flex-wrap justify-between items-center lg:hidden">
       <Link href="/" className="text-xl font-bold relative w-[132px] h-5">
-        <Image src={logo} alt="SHYLD" fill />
+        <Image src="/svg/shyld-ai-logo.svg" alt="SHYLD" fill />
       </Link>
       <button
         className="lg:hidden text-white focus:outline-none"

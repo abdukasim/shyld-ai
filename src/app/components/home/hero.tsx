@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import homeHero from "../../../public/images/home-hero.jpeg";
-import productImage from "../../../public/images/shyld-product-high.png";
+// import homeHero from "../../../public/images/home-hero.jpeg";
+// import productImage from "../../../public/images/shyld-product-high.png";
 import GradientButton from "../ui/gradient-button";
 
 export default function Hero() {
@@ -9,7 +9,8 @@ export default function Hero() {
     <div className="relative flex flex-col items-center justify-center min-h-[90vh] px-4 py-8 md:px-0 md:py-0">
       <div className="absolute inset-0 overflow-hidden">
         <Image
-          src={homeHero}
+          // src={homeHero}
+          src="/images/home-hero.jpeg"
           alt="Hero"
           fill
           objectFit="cover"
@@ -19,7 +20,8 @@ export default function Hero() {
       <div className="absolute inset-0 bg-black opacity-[0.67] z-10"></div>
       <div className="relative z-20 flex flex-col items-center justify-center">
         <Image
-          src={productImage}
+          // src={productImage}
+          src="/images/shyld-product-high.png"
           alt="logo"
           width={385}
           height={403}

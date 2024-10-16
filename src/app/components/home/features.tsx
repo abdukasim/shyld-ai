@@ -1,16 +1,13 @@
 import Image from "next/image";
-import hospitalRoomInterior from "@/public/images/hospital-room-interior.jpeg";
-import productImage from "@/public/images/product-image.png";
-import littleChild from "@/public/images/little-child-in-hospital-room.jpeg";
 import GradientButton from "../ui/gradient-button";
 
 const Features = () => {
   return (
-    <section className="h-max px-[108px] space-y-[180px]">
+    <section className="h-max px-[108px] space-y-[180px] max-w-[1440px] mx-auto">
       <div className="flex flex-col md:flex-row items-center justify-between  pt-[180px] h-max">
         <div className="relative">
           <Image
-            src={hospitalRoomInterior}
+            src="/images/hospital-room-interior.jpeg"
             alt="Modern hospital room with smart features"
             className="rounded-2xl shadow-lg h-[600px] object-cover object-left"
             width={500}
@@ -24,7 +21,7 @@ const Features = () => {
           >
             <div className="w-[32px] h-[32px] relative">
               <Image
-                src={productImage}
+                src="/images/product-image.png"
                 alt="Modern hospital room with smart features"
                 fill
               />
@@ -38,7 +35,7 @@ const Features = () => {
           >
             <div className="w-[32px] h-[32px] relative">
               <Image
-                src={productImage}
+                src="/images/product-image.png"
                 alt="Modern hospital room with smart features"
                 fill
               />
@@ -46,10 +43,10 @@ const Features = () => {
           </div>
         </div>
         <div className="md:w-1/2 md:pl-8">
-          <h2 className="text-[32px] font-bold mb-6">
+          <h2 className="title mb-6">
             Building smart Healthcare <br /> Facilities of tomorrow
           </h2>
-          <p className="text-white text-2xl font-light mb-6">
+          <p className="text-white paragraph mb-6">
             ShyftAI Agents turn real-time data into real-time <br /> patient
             care and environmental treatment.
           </p>
@@ -79,10 +76,10 @@ const Features = () => {
 
       <div className="flex flex-col md:flex-row items-center justify-between pt-[180px] h-max relative">
         <div className="">
-          <h2 className="text-[32px] font-bold mb-6 leading-9">
+          <h2 className="title mb-6">
             Fully Autonomous UV-C <br /> Sanitization Powered by AI
           </h2>
-          <p className="text-white text-2xl font-light mb-6">
+          <p className="text-white paragraph mb-6">
             Inactivates Pathogens in 20 seconds from 6.5 feet with no manual
             operation required
           </p>
@@ -133,7 +130,7 @@ const Features = () => {
 
         <div className="relative">
           <Image
-            src={littleChild}
+            src="/images/little-child-in-hospital-room.jpeg"
             alt="A little child in a hospital room"
             className="rounded-2xl shadow-lg h-[600px] object-cover object-left -scale-x-100"
             width={500}
@@ -147,7 +144,7 @@ const Features = () => {
           >
             <div className="w-[32px] h-[32px] relative">
               <Image
-                src={productImage}
+                src="/images/product-image.png"
                 alt="Modern hospital room with smart features"
                 fill
               />

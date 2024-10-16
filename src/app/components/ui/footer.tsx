@@ -1,32 +1,27 @@
 import React from "react";
 import GradientButton from "@/app/components/ui/gradient-button";
-import logo from "@/public/svg/shyld-ai-logo.svg";
 import Image from "next/image";
-import linkedin from "@/public/svg/linkedin-black.svg";
-import mail from "@/public/svg/mail-black.svg";
-import phone from "@/public/svg/phone-black.svg";
-import whatsapp from "@/public/svg/whatsapp-black.svg";
 
 const Footer = () => {
   const socialMediaLinks = [
     {
       name: "LinkedIn",
-      icon: linkedin,
+      icon: "/svg/linkedin-black.svg",
       href: "#",
     },
     {
       name: "Email",
-      icon: mail,
+      icon: "/svg/mail-black.svg",
       href: "#",
     },
     {
       name: "Phone",
-      icon: phone,
+      icon: "/svg/phone-black.svg",
       href: "#",
     },
     {
       name: "WhatsApp",
-      icon: whatsapp,
+      icon: "/svg/whatsapp-black.svg",
       href: "#",
     },
   ];
@@ -36,7 +31,12 @@ const Footer = () => {
         {/* Logo and description */}
         <div className="w-max space-y-12">
           <div className="w-full max-w-md">
-            <Image src={logo} alt="SHYLD" width={132} height={20} />
+            <Image
+              src="/svg/shyld-ai-logo.svg"
+              alt="SHYLD"
+              width={132}
+              height={20}
+            />
             <p className="mt-6 text-xl font-light">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt
