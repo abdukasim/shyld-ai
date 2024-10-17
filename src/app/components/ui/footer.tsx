@@ -27,9 +27,9 @@ const Footer = () => {
   ];
   return (
     <footer className="bg-[#121212] text-white">
-      <div className="container flex justify-between items-start py-24 mx-auto">
+      <div className="container flex flex-col md:flex-row justify-between items-start py-12 md:py-24 mx-auto px-4 md:px-0">
         {/* Logo and description */}
-        <div className="w-max space-y-12">
+        <div className="w-full md:w-max space-y-12 mb-12 md:mb-0">
           <div className="w-full max-w-md">
             <Image
               src="/svg/shyld-ai-logo.svg"
@@ -44,8 +44,10 @@ const Footer = () => {
           </div>
 
           {/* Social Media */}
-          <div className="w-full ">
-            <h3 className="text-3xl font-medium mb-6">Social Media</h3>
+          <div className="w-full">
+            <h3 className="text-2xl md:text-3xl font-medium mb-6">
+              Social Media
+            </h3>
             <div className="flex space-x-4">
               {socialMediaLinks.map((icon, index) => (
                 <GradientButton key={index} circular isLink href={icon.href}>
@@ -62,8 +64,10 @@ const Footer = () => {
         </div>
 
         {/* Links */}
-        <div className="w-full md:w-1/4 mb-8 md:mb-0">
-          <h3 className="text-3xl font-medium mb-8">Links</h3>
+        <div className="w-full md:w-1/4 mb-12 md:mb-0">
+          <h3 className="text-2xl md:text-3xl font-medium mb-6 md:mb-8">
+            Links
+          </h3>
           <ul className="space-y-6">
             {["Product", "AI Platform", "News", "About"].map((item, index) => (
               <li key={index}>
@@ -80,7 +84,7 @@ const Footer = () => {
 
         {/* Newsletter */}
         <div className="w-full md:w-1/4">
-          <h3 className="text-[32px] font-bold mb-8">
+          <h3 className="text-2xl md:text-[32px] font-bold mb-6 md:mb-8">
             Subscribe to our newsletter
           </h3>
           <form className="w-full">
@@ -91,7 +95,7 @@ const Footer = () => {
                 className="flex-grow w-full bg-black rounded-full px-3 py-4 focus:outline-none"
               />
               <button
-                className="absolute right-3 top-1/2 -translate-y-1/2 p-2 h-max w-max rounded-full text-white text-base"
+                className="absolute right-3 top-1/2 -translate-y-1/2 p-2 h-max w-max rounded-full text-white text-sm md:text-base"
                 style={{
                   background:
                     "linear-gradient(135deg, #00FCFF 0%, #24689B 100%)",
@@ -101,14 +105,14 @@ const Footer = () => {
               </button>
             </div>
           </form>
-          <p className="mt-2 text-base text-white">
+          <p className="mt-2 text-sm md:text-base text-white">
             I agree to receive Shyld AI newsletters
           </p>
         </div>
       </div>
 
       {/* Copyright */}
-      <div className="text-center text-base py-3 text-white bg-black">
+      <div className="text-center text-sm md:text-base py-3 text-white bg-black">
         Copyright © {new Date().getFullYear()}. All rights reserved.
       </div>
     </footer>
