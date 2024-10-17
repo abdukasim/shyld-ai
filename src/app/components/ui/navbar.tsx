@@ -2,7 +2,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import GradientButton from "@/app/components/ui/gradient-button";
+import GradientButton from "@/app/components/ui/form/gradient-button";
 
 const Navbar = () => {
   return (

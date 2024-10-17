@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import GradientButton from "../ui/gradient-button";
+import GradientButton from "../ui/form/gradient-button";
 
 export default function MoreFeatures() {
   return (

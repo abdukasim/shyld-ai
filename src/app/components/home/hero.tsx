@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 // import homeHero from "../../../public/images/home-hero.jpeg";
 // import productImage from "../../../public/images/shyld-product-high.png";
-import GradientButton from "../ui/gradient-button";
+import GradientButton from "../ui/form/gradient-button";
 
 export default function Hero() {
   return (

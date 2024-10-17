@@ -1,5 +1,5 @@
 import React from "react";
-import GradientButton from "@/app/components/ui/gradient-button";
+import GradientButton from "@/app/components/ui/form/gradient-button";
 import Image from "next/image";
 
 const Footer = () => {

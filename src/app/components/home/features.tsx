@@ -1,5 +1,5 @@
 import Image from "next/image";
-import GradientButton from "../ui/gradient-button";
+import GradientButton from "../ui/form/gradient-button";
 
 const Features = () => {
   return (
