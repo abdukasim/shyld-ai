@@ -1,6 +1,9 @@
 import Image from "next/image";
 import ContactForm from "../components/contact/contact-form";
-import Map from "../components/ui/map";
+import dynamic from "next/dynamic";
+
+// Dynamically import the Map component with SSR disabled
+const Map = dynamic(() => import("../components/ui/map"), { ssr: false });
 
 export default function Contact() {
   return (
