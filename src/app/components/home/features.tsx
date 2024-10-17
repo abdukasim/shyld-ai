@@ -3,20 +3,20 @@ import GradientButton from "../ui/form/gradient-button";
 
 const Features = () => {
   return (
-    <section className="h-max px-[108px] space-y-[180px] max-w-[1440px] mx-auto">
-      <div className="flex flex-col md:flex-row items-center justify-between  pt-[180px] h-max">
-        <div className="relative">
+    <section className="h-max px-4 md:px-[108px] space-y-[90px] md:space-y-[180px] max-w-[1440px] mx-auto">
+      <div className="flex flex-col md:flex-row items-center justify-between pt-[90px] md:pt-[180px] h-max">
+        <div className="relative w-full md:w-auto mb-8 md:mb-0">
           <div className="relative overflow-hidden rounded-2xl shadow-lg group">
             <Image
               src="/images/hospital-room-interior.jpeg"
               alt="Modern hospital room with smart features"
-              className="h-[600px] object-cover object-left transition-transform duration-300 group-hover:scale-110"
+              className="w-full md:w-[500px] h-[400px] md:h-[600px] object-cover object-left transition-transform duration-300 group-hover:scale-110"
               width={500}
               height={600}
             />
             <div className="absolute inset-0 bg-black opacity-50 transition-opacity duration-300 group-hover:opacity-0"></div>
             <div
-              className="absolute top-[280px] left-9 w-[42px] h-[42px] bg-white rounded-full flex items-center justify-center transition-transform duration-300 hover:scale-125 group-hover:scale-125 -rotate-[25deg] z-10"
+              className="absolute top-[150px] md:top-[280px] left-9 w-[42px] h-[42px] bg-white rounded-full flex items-center justify-center transition-transform duration-300 hover:scale-125 group-hover:scale-125 -rotate-[25deg] z-10"
               style={{
                 boxShadow: "0px 0px 24px 0px #00FCFF",
               }}
@@ -30,7 +30,7 @@ const Features = () => {
               </div>
             </div>
             <div
-              className="absolute top-[280px] left-[290px] w-[42px] h-[42px] bg-white rounded-full flex items-center justify-center transition-transform duration-300 hover:scale-125 group-hover:scale-125 -rotate-[25deg] z-10"
+              className="absolute top-[150px] md:top-[280px] left-[160px] md:left-[290px] w-[42px] h-[42px] bg-white rounded-full flex items-center justify-center transition-transform duration-300 hover:scale-125 group-hover:scale-125 -rotate-[25deg] z-10"
               style={{
                 boxShadow: "0px 0px 24px 0px #00FCFF",
               }}
@@ -77,7 +77,7 @@ const Features = () => {
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row items-center justify-between pt-[180px] h-max relative">
+      <div className="flex flex-col md:flex-row items-center justify-between pt-[90px] md:pt-[180px] h-max relative">
         <div className="">
           <h2 className="title mb-6">
             Fully Autonomous UV-C <br /> Sanitization Powered by AI
@@ -86,7 +86,7 @@ const Features = () => {
             Inactivates Pathogens in 20 seconds from 6.5 feet with no manual
             operation required
           </p>
-          <div className="flex gap-4 items-center">
+          <div className="flex gap-1 md:gap-4 items-center">
             <GradientButton textColor="white" outlined>
               <span>Learn More</span>
             </GradientButton>
@@ -98,7 +98,7 @@ const Features = () => {
 
         {/* Add the zigzag SVG here */}
         <svg
-          className="absolute top-[30%] left-1/2 transform -translate-x-1/2 z-10"
+          className="absolute top-[30%] left-1/2 transform -translate-x-1/2 z-10 hidden md:block scale-110"
           width="317"
           height="152"
           viewBox="0 0 317 152"
@@ -131,13 +131,13 @@ const Features = () => {
           />
         </svg>
 
-        <div className="relative">
+        <div className="relative w-full md:w-auto mt-8 md:mt-0">
           <div className="relative overflow-hidden rounded-2xl shadow-lg group">
             <div className="-scale-x-100">
               <Image
                 src="/images/little-child-in-hospital-room.jpeg"
                 alt="A little child in a hospital room"
-                className="h-[600px] object-cover object-left transition-transform duration-300 group-hover:scale-110"
+                className="w-full md:w-[500px] h-[400px] md:h-[600px] object-cover object-left transition-transform duration-300 group-hover:scale-110"
                 width={500}
                 height={600}
               />
