@@ -12,6 +12,18 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      keyframes: {
+        grow: {
+          "0%": { transform: "scale(1)" },
+          "25%": { transform: "scale(1.2)" },
+          "50%": { transform: "scale(1)" },
+          "75%": { transform: "scale(1.2)" },
+          "100%": { transform: "scale(1)" },
+        },
+      },
+      animation: {
+        grow: "grow 6s ease-in-out infinite",
+      },
     },
   },
   plugins: [],
