@@ -4,7 +4,7 @@ import React from "react";
 
 export default function About() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen relative">
       <div className="px-4 sm:px-8 lg:px-[108px] max-w-[1440px] mx-auto mt-16 sm:mt-[120px] mb-16 sm:mb-[214px]">
         <div className="flex flex-col lg:flex-row gap-6 items-start mb-16 lg:mb-[150px]">
           <div className="flex flex-col gap-5 max-w-full lg:max-w-[704px]">
@@ -144,6 +144,9 @@ export default function About() {
           </div>
         </div>
       </div>
+
+      <div className="absolute top-[208px] left-[74px] w-[234px] h-[234px] bg-gradient-to-r from-[#00FCFF] to-[#24689B] rounded-full blur-[500px] -z-10"></div>
+      <div className="absolute top-[207px] right-0 w-[234px] h-[234px] bg-gradient-to-r from-[#00FCFF] to-[#24689B] rounded-full blur-[500px] -z-10"></div>
     </div>
   );
 }
