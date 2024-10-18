@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import GradientButton from "../components/ui/form/gradient-button";
+// import GradientButton from "../components/ui/form/gradient-button";
 
 export default function About() {
   return (
@@ -93,9 +93,9 @@ export default function About() {
                 <div className="space-y-6 flex flex-col items-center">
                   <h3 className="text-xl font-semibold">{leader.name}</h3>
                   <p className="text-lg font-light">{leader.title}</p>
-                  <GradientButton>
+                  {/* <GradientButton>
                     <span>View Bio</span>
-                  </GradientButton>
+                  </GradientButton> */}
                 </div>
               </div>
             ))}
@@ -135,9 +135,9 @@ export default function About() {
                 <div className="space-y-6 flex flex-col items-center">
                   <h3 className="text-xl font-semibold">{leader.name}</h3>
                   <p className="text-lg font-light">{leader.title}</p>
-                  <GradientButton>
+                  {/* <GradientButton>
                     <span>View Bio</span>
-                  </GradientButton>
+                  </GradientButton> */}
                 </div>
               </div>
             ))}
