@@ -3,6 +3,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import GradientButton from "@/app/components/ui/form/gradient-button";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
   return (
@@ -14,22 +15,44 @@ const Navbar = () => {
 };
 
 const DesktopNav = () => {
+  const pathname = usePathname();
+
   return (
     <div className="container mx-auto hidden lg:flex justify-between items-center">
       <Link href="/" className="text-xl font-bold relative w-[132px] h-5">
         <Image src="/svg/shyld-ai-logo.svg" alt="SHYLD" fill />
       </Link>
       <div className="space-x-12 font-light text-xl">
-        <Link href="/product" className="hover:text-gray-300">
+        <Link
+          href="/product"
+          className={`hover:text-gray-300 ${
+            pathname === "/product" ? "active-link" : ""
+          }`}
+        >
           Product
         </Link>
-        <Link href="/ai-platform" className="hover:text-gray-300">
+        <Link
+          href="/ai-platform"
+          className={`hover:text-gray-300 ${
+            pathname === "/ai-platform" ? "active-link" : ""
+          }`}
+        >
           AI Platform
         </Link>
-        <Link href="/news" className="hover:text-gray-300">
+        <Link
+          href="/news"
+          className={`hover:text-gray-300 ${
+            pathname === "/news" ? "active-link" : ""
+          }`}
+        >
           News
         </Link>
-        <Link href="/about" className="hover:text-gray-300">
+        <Link
+          href="/about"
+          className={`hover:text-gray-300 ${
+            pathname === "/about" ? "active-link" : ""
+          }`}
+        >
           About
         </Link>
       </div>
@@ -42,6 +65,7 @@ const DesktopNav = () => {
 
 const MobileNav = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const pathname = usePathname();
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -103,16 +127,36 @@ const MobileNav = () => {
           </svg>
         </button>
         <div className="flex flex-col items-start font-light text-xl p-8 mt-12">
-          <Link href="/product" className="hover:text-gray-300 mb-4">
+          <Link
+            href="/product"
+            className={`hover:text-gray-300 mb-4 ${
+              pathname === "/product" ? "active-link" : ""
+            }`}
+          >
             Product
           </Link>
-          <Link href="/ai-platform" className="hover:text-gray-300 mb-4">
+          <Link
+            href="/ai-platform"
+            className={`hover:text-gray-300 mb-4 ${
+              pathname === "/ai-platform" ? "active-link" : ""
+            }`}
+          >
             AI Platform
           </Link>
-          <Link href="/news" className="hover:text-gray-300 mb-4">
+          <Link
+            href="/news"
+            className={`hover:text-gray-300 mb-4 ${
+              pathname === "/news" ? "active-link" : ""
+            }`}
+          >
             News
           </Link>
-          <Link href="/about" className="hover:text-gray-300 mb-4">
+          <Link
+            href="/about"
+            className={`hover:text-gray-300 mb-4 ${
+              pathname === "/about" ? "active-link" : ""
+            }`}
+          >
             About
           </Link>
           <div className="mt-8">

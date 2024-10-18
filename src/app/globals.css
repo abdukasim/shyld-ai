@@ -60,3 +60,11 @@ body {
 
   border-image-source: linear-gradient(135deg, #00fcff 0%, #24689b 100%);
 }
+
+.active-link {
+  background: linear-gradient(135deg, #00fcff 0%, #24689b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
