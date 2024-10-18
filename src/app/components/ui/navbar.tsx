@@ -24,20 +24,20 @@ const DesktopNav = () => {
       </Link>
       <div className="space-x-12 font-light text-xl">
         <Link
-          href="/product"
+          href="/solutions"
           className={`hover:text-gray-300 ${
-            pathname === "/product" ? "active-link" : ""
+            pathname === "/solutions" ? "active-link" : ""
           }`}
         >
-          Product
+          Solutions
         </Link>
         <Link
           href="/ai-platform"
           className={`hover:text-gray-300 ${
-            pathname === "/ai-platform" ? "active-link" : ""
+            pathname === "/shyld-ai-dashboard" ? "active-link" : ""
           }`}
         >
-          AI Platform
+          Shyld AI Dashboard
         </Link>
         <Link
           href="/news"
@@ -128,20 +128,20 @@ const MobileNav = () => {
         </button>
         <div className="flex flex-col items-start font-light text-xl p-8 mt-12">
           <Link
-            href="/product"
+            href="/solutions"
             className={`hover:text-gray-300 mb-4 ${
-              pathname === "/product" ? "active-link" : ""
+              pathname === "/solutions" ? "active-link" : ""
             }`}
           >
-            Product
+            Solutions
           </Link>
           <Link
-            href="/ai-platform"
+            href="/shyld-ai-dashboard"
             className={`hover:text-gray-300 mb-4 ${
-              pathname === "/ai-platform" ? "active-link" : ""
+              pathname === "/shyld-ai-dashboard" ? "active-link" : ""
             }`}
           >
-            AI Platform
+            Shyld AI Dashboard
           </Link>
           <Link
             href="/news"
