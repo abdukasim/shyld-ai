@@ -1,6 +1,41 @@
 import React from "react";
 import Slider from "@/app/components/solutions/slider";
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Intelligent Healthcare Solutions | Shyld AI",
+  description:
+    "Discover Shyld AI's intelligent monitoring solutions for enhanced patient care, operational efficiency, and improved financial outcomes in healthcare settings.",
+  keywords: [
+    "healthcare AI",
+    "patient monitoring",
+    "intelligent healthcare",
+    "Shyld AI",
+    "clinical outcomes",
+  ],
+  openGraph: {
+    title: "Intelligent Healthcare Solutions | Shyld AI",
+    description:
+      "Enhance patient care with Shyld AI's continuous, ambient monitoring solutions for healthcare settings.",
+    images: [
+      {
+        url: "/images/shyld-ai-solutions-og.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Shyld AI Healthcare Solutions",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Intelligent Healthcare Solutions | Shyld AI",
+    description:
+      "Enhance patient care with Shyld AI's continuous, ambient monitoring solutions for healthcare settings.",
+    images: ["/images/shyld-ai-solutions-twitter.jpg"],
+  },
+};
+
 export default function Solutions() {
   return (
     <div className="relative min-h-screen px-4 sm:px-8 md:px-16 lg:px-[108px] max-w-[1440px] mx-auto">
