@@ -11,12 +11,12 @@ interface NewsData {
 }
 
 const newsData: NewsData = {
-  "seal-shield-showcase-shyld-ai-hlth-2024": {
-    title: "Seal Shield to showcase Shyld AI at HLTH 2024",
-    date: "October 22, 2024",
+  "shyld-ai-agents-at-hlth-2024": {
+    title: "Shyld AI Agents at HLTH 2024",
+    date: "October 11, 2024",
     image: "/images/news-1.jpeg",
     content:
-      "Seal Shield, a leader in infection control technology, is set to showcase its groundbreaking Shyld AI system at the Healthcare Management and Medical Systems (HMMS) 2024 conference.\n\nThe Shyld AI system represents a significant leap forward in healthcare-associated infection prevention, utilizing advanced machine learning algorithms to monitor and optimize hygiene practices in real-time.\n\nAttendees of HMMS 2024 will have the opportunity to experience live demonstrations of the Shyld AI system and engage with Seal Shield experts to learn more about how this innovative technology is reshaping infection control protocols in healthcare settings.",
+      "We are excited to be sharing our Physicial AI Agents at HLTH USA in Las Vegas October 20-23.\n\n Join us at Booth 3840 to see how Shyld AI drives real-time, autonomous Infection Prevention applications for enhanced clinical and operational efficiencies.\n\n Learn more about Shyld AI and how we are empowering Smart Healthcare at shyld.ai",
   },
 };
 

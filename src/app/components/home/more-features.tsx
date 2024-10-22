@@ -31,12 +31,15 @@ export default function MoreFeatures() {
           </p>
 
           <div className="mt-6 flex">
-            <GradientButton>Learn More</GradientButton>
+            <GradientButton href="#section-four">Learn More</GradientButton>
           </div>
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8 md:gap-[51px] mt-16 md:mt-[180px]">
+      <div
+        id="section-four"
+        className="flex flex-col md:flex-row items-start md:items-center justify-between gap-8 md:gap-[51px] mt-16 md:mt-[180px]"
+      >
         <div className="flex flex-col gap-8 md:gap-[58px] max-w-full md:max-w-[500px]">
           {[
             {

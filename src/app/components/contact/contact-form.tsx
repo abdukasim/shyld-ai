@@ -31,11 +31,13 @@ export default function ContactForm() {
       <Select
         label="Interested in :"
         // placeholder="Select your intrested"
-        options={
-          [
-            // Add your options here
-          ]
-        }
+        options={[
+          { value: "Product Demo", label: "Product Demo" },
+          { value: "Custom Price Quote", label: "Custom Price Quote" },
+          { value: "Product Information", label: "Product Information" },
+          { value: "Training Support", label: "Training Support" },
+          { value: "Product Service", label: "Product Service" },
+        ]}
       />
       <TextArea label="Message" placeholder="Write you message" rows={5} />
       <div className="mt-6">

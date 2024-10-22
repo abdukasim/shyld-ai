@@ -36,7 +36,7 @@ export default function Contact() {
               />
             </span>
             <span className="text-black font-light text-xl">
-              20631 Ventura Blvd, #302, Woodland Hills, 91364
+              440 N. Wolfe Rd., Sunnyvale, CA 94085
             </span>
           </div>
           <div className="flex items-center gap-3">
@@ -49,7 +49,7 @@ export default function Contact() {
               />
             </span>
             <span className="text-black font-light text-xl">
-              +44-844-464-6333
+              +1.650.669.8615
             </span>
           </div>
           <div className="flex items-center gap-3">

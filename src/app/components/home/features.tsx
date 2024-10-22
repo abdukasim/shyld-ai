@@ -14,7 +14,10 @@ const Features = () => {
     });
 
   return (
-    <section className="h-max px-4 md:px-[108px] space-y-[90px] md:space-y-[180px] max-w-[1440px] mx-auto">
+    <section
+      id="section-two"
+      className="h-max px-4 md:px-[108px] space-y-[90px] md:space-y-[180px] max-w-[1440px] mx-auto"
+    >
       <div className="flex flex-col md:flex-row items-center justify-between pt-[90px] md:pt-[180px] h-max">
         <div
           ref={ref}
@@ -118,10 +121,10 @@ const Features = () => {
             seconds at 6.5 feet distance.
           </p>
           <div className="flex gap-1 md:gap-4 items-center">
-            <GradientButton textColor="white" outlined>
+            <GradientButton textColor="white" outlined href="#section-three">
               <span>Learn More</span>
             </GradientButton>
-            <GradientButton>
+            <GradientButton href="/contact">
               <span>Request a Demo</span>
             </GradientButton>
           </div>

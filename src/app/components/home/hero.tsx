@@ -33,10 +33,10 @@ export default function Hero() {
             Shyld AI integrates real-time data for real-time treatment and care.
           </p>
           <div className="flex flex-col md:flex-row items-center justify-center gap-4 w-full md:w-auto h-max">
-            <GradientButton textColor="white" outlined>
+            <GradientButton textColor="white" outlined href="#section-two">
               Learn More
             </GradientButton>
-            <GradientButton>Request a Demo</GradientButton>
+            <GradientButton href="/contact">Request a Demo</GradientButton>
           </div>
         </div>
       </div>

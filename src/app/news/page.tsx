@@ -5,9 +5,9 @@ import Link from "next/link";
 const newsItems = [
   {
     image: "/images/news-1.jpeg",
-    date: "October 22, 2024",
-    title: "Seal Shield to showcase Shyld AI at HLTH 2024",
-    slug: "seal-shield-showcase-shyld-ai-hlth-2024",
+    date: "October 11, 2024",
+    title: "Shyld AI Agents at HLTH 2024",
+    slug: "shyld-ai-agents-at-hlth-2024",
   },
 ];
 
