@@ -38,8 +38,7 @@ const Footer = () => {
               height={20}
             />
             <p className="mt-6 text-xl font-light">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt
+              AI Agents for Automated Infection Control
             </p>
           </div>
 
@@ -101,12 +100,14 @@ const Footer = () => {
                     "linear-gradient(135deg, #00FCFF 0%, #24689B 100%)",
                 }}
               >
-                Getting started
+                Sign Up
               </button>
             </div>
           </form>
-          <p className="mt-2 text-sm md:text-base text-white">
-            I agree to receive Shyld AI newsletters
+          <p className="mt-2 text-xs text-white">
+            By signing up for email you are agreeing to receive news and
+            information from Shyld AI. We will never share your information with
+            any third party.
           </p>
         </div>
       </div>

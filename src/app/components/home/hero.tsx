@@ -1,7 +1,5 @@
 import React from "react";
 import Image from "next/image";
-// import homeHero from "../../../public/images/home-hero.jpeg";
-// import productImage from "../../../public/images/shyld-product-high.png";
 import GradientButton from "../ui/form/gradient-button";
 
 export default function Hero() {
@@ -10,14 +8,14 @@ export default function Hero() {
       <div className="absolute inset-0 overflow-hidden">
         <Image
           // src={homeHero}
-          src="/images/home-hero.jpeg"
+          src="/images/Hero_shot.png"
           alt="Hero"
           fill
           objectFit="cover"
           className="blur-[4px] scale-100"
         />
       </div>
-      <div className="absolute inset-0 bg-black opacity-[0.67] z-10"></div>
+      <div className="absolute inset-0 bg-[#0c0c20] opacity-[0.67] z-10"></div>
       <div className="relative z-20 flex flex-col items-center justify-center">
         <Image
           // src={productImage}
@@ -29,7 +27,7 @@ export default function Hero() {
         />
         <div className="space-y-6 mt-6">
           <h1 className="text-2xl md:text-[32px] font-bold text-center">
-            Powering Health care Intelligently
+            Powering Healthcare Intelligently
           </h1>
           <p className="text-lg md:text-2xl w-full md:w-[500px] text-center">
             Shyld AI integrates real-time data for real-time treatment and care.

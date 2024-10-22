@@ -32,12 +32,12 @@ const DesktopNav = () => {
           Solutions
         </Link>
         <Link
-          href="/ai-platform"
+          href="/ai-dashboard"
           className={`hover:text-gray-300 ${
-            pathname === "/shyld-ai-dashboard" ? "active-link" : ""
+            pathname === "/ai-dashboard" ? "active-link" : ""
           }`}
         >
-          Shyld AI Dashboard
+          AI Dashboard
         </Link>
         <Link
           href="/news"
@@ -47,14 +47,23 @@ const DesktopNav = () => {
         >
           News
         </Link>
-        <Link
-          href="/about"
-          className={`hover:text-gray-300 ${
-            pathname === "/about" ? "active-link" : ""
-          }`}
-        >
-          About
-        </Link>
+        <div className="relative inline-block group">
+          <span className="hover:text-gray-300 cursor-pointer">Company</span>
+          <div className="absolute hidden group-hover:block bg-[#121212] pl-4 pr-8 py-4 rounded-md z-50">
+            <Link href="/about" className="block hover:text-gray-300 py-1">
+              About
+            </Link>
+            <Link href="/news" className="block hover:text-gray-300 py-1">
+              News
+            </Link>
+            <Link href="/partners" className="block hover:text-gray-300 py-1">
+              Partners
+            </Link>
+            <Link href="/careers" className="block hover:text-gray-300 py-1">
+              Careers
+            </Link>
+          </div>
+        </div>
       </div>
       <GradientButton href="/contact" isLink={true}>
         <span className="text-black">Contact Us</span>
@@ -136,12 +145,12 @@ const MobileNav = () => {
             Solutions
           </Link>
           <Link
-            href="/shyld-ai-dashboard"
+            href="/ai-dashboard"
             className={`hover:text-gray-300 mb-4 ${
-              pathname === "/shyld-ai-dashboard" ? "active-link" : ""
+              pathname === "/ai-dashboard" ? "active-link" : ""
             }`}
           >
-            Shyld AI Dashboard
+            AI Dashboard
           </Link>
           <Link
             href="/news"
@@ -151,14 +160,23 @@ const MobileNav = () => {
           >
             News
           </Link>
-          <Link
-            href="/about"
-            className={`hover:text-gray-300 mb-4 ${
-              pathname === "/about" ? "active-link" : ""
-            }`}
-          >
-            About
-          </Link>
+          <div className="mb-4">
+            <span className="hover:text-gray-300 cursor-pointer">Company</span>
+            <div className="ml-4 mt-2">
+              <Link href="/about" className="block hover:text-gray-300 mb-2">
+                About
+              </Link>
+              <Link href="/news" className="block hover:text-gray-300 mb-2">
+                News
+              </Link>
+              <Link href="/partners" className="block hover:text-gray-300 mb-2">
+                Partners
+              </Link>
+              <Link href="/careers" className="block hover:text-gray-300 mb-2">
+                Careers
+              </Link>
+            </div>
+          </div>
           <div className="mt-8">
             <GradientButton href="/contact" isLink={true}>
               <span className="text-black">Contact Us</span>

@@ -22,12 +22,12 @@ const GradientButton: React.FC<GradientButtonProps> = ({
 }) => {
   const gradientClasses = outlined
     ? ""
-    : "bg-gradient-to-br from-[#00FCFF] to-[#24689B] hover:bg-none hover:bg-white transition-all duration-300";
+    : "bg-[#00FCFF] hover:bg-none hover:bg-white transition-all duration-300";
 
   const commonClasses = `${
     circular ? "p-[10px] rounded-full w-auto" : "px-10 py-3"
   } rounded-full w-full md:w-auto text-center ${
-    outlined ? `gradient-outline text-${textColor}` : `text-${textColor}`
+    outlined ? `border border-[#00FCFF] text-${textColor}` : `text-${textColor}`
   } ${gradientClasses}`;
 
   if (isLink) {

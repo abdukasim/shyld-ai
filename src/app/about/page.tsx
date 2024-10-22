@@ -8,44 +8,44 @@ export default function About() {
       <div className="px-4 sm:px-8 lg:px-[108px] max-w-[1440px] mx-auto mt-16 sm:mt-[120px] mb-16 sm:mb-[214px]">
         <div className="flex flex-col lg:flex-row gap-6 items-start mb-16 lg:mb-[150px]">
           <div className="flex flex-col gap-5 max-w-full lg:max-w-[704px]">
-            <h1 className="text-2xl sm:text-[32px] font-bold">Zero</h1>
+            <h1 className="text-2xl sm:text-[32px] font-bold">
+              Our Commitment to Zero Infections
+            </h1>
 
             <div className="space-y-4">
               <p className="text-xl font-light">
                 We believe no human should get sicker while in a Healthcare
-                facility and that even one Healthcare-associated Infection is
-                too many. Zero is not just a concept, slogan or an abstract
-                idea, we believe in this reality and that advanced intelligent
-                technology for enhanced care and treatment will help us get
-                there.
+                facility and that even one Healthcare- associated Infection is
+                too many. Getting to Zero infections is our Goal. We design and
+                make advanced intelligent monitoring technology to deliver
+                enhanced care and treatment will help us get there.
               </p>
               <p className="text-xl font-light">
                 We believe all Healthcare professionals deserve smarter products
-                and technology that support them, streamline instead of increase
-                their workload, foster training and development and, above all,
-                help them do their brave, selfless work easier, faster and more
-                safely.
+                that accelerate clinical and operational workflows and results
+                and, above all, help them do their brave, selfless work easier,
+                faster and more safely.
               </p>
               <p className="text-xl font-light">
-                We believe all Healthcare facilities - of different types,
-                sizes, budgets and locations around the world - should have the
-                same access to advanced products and technologies that keep
-                patients, employees and visitors safe.
+                We believe all Healthcare facilities globally – of different
+                types, sizes, budgets and locations – should have the same
+                access to advanced products and technologies that keep patients,
+                employees and visitors safe.
               </p>
               <p className="text-xl font-light">
-                We believe in clean, sustainable solutions that do not introduce
-                more caustic chemicals, such as Mercury, to one of the most
-                sensitive environments on our planet, that of patient care.
+                We believe in clean, sustainable solutions that keep harmful
+                chemicals, such as Mercury, out of Healthcare and support
+                sustainable supply chains.
               </p>
               <p className="text-xl font-light">
-                We hope you will join us. We are stronger together and it will
-                take all of us to get to Zero.
+                We hope you will join us. We are stronger together and together,
+                we can get to Zero.
               </p>
             </div>
           </div>
           <div className="relative w-full h-[300px] sm:h-[400px] lg:w-[496px] lg:h-[564px] rounded-[36px] overflow-hidden group mt-8 lg:mt-0">
             <Image
-              src="/images/medic-pointing-at-tablet.jpeg"
+              src="/images/Moh.jpeg"
               alt="Medic pointing at tablet"
               fill
               className="object-cover object-center transition-transform duration-300 group-hover:scale-110"

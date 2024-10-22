@@ -74,7 +74,7 @@ const Features = () => {
             Building smart Healthcare <br /> Facilities of tomorrow
           </h2>
           <p className="text-white paragraph mb-6">
-            ShyftAI Agents turn real-time data into real-time <br /> patient
+            ShyldAI Agents turn real-time data into real-time <br /> patient
             care and environmental treatment.
           </p>
           <ul className="space-y-6 text-white text-[22px] font-light opacity-70">
@@ -114,8 +114,8 @@ const Features = () => {
             Fully Autonomous UV-C <br /> Sanitization Powered by AI
           </h2>
           <p className="text-white paragraph mb-6">
-            Inactivates Pathogens in 20 seconds from 6.5 feet with no manual
-            operation required
+            Rapid inactivation of high-risk Healthcare pathogens in as low as 10
+            seconds at 6.5 feet distance.
           </p>
           <div className="flex gap-1 md:gap-4 items-center">
             <GradientButton textColor="white" outlined>

@@ -4,21 +4,20 @@ import { useState, useEffect, useRef, TouchEvent } from "react";
 
 const carouselItems = [
   {
-    src: "/images/female-doctor.jpeg",
-    alt: "Female doctor",
-    caption: "Identifies contaminated surfaces in a room",
+    src: "/images/How_it_works_1_upscaled.png",
+    alt: "Identifies contaminated surfaces in a room",
   },
   {
-    src: "/images/finger-pressing-heart.jpeg",
-    alt: "Finger pressing virtual heart see graph",
-    caption:
-      "Automatically sanitizes targeted surfaces using a precision UV-C beam",
+    src: "/images/How_it_works_2_upscaled.png",
+    alt: "Automatically sanitizes targeted surfaces using a precision UV-C beam",
   },
   {
-    src: "/images/close-up-analysis.jpeg",
-    alt: "Close up analysis by scientist on a tablet",
-    caption:
-      "Supports future compliance by creating a heat map of room surfaces and real-time data on UV dosage, room occupation and cleaning performance",
+    src: "/images/How_it_works_3_upscaled.png",
+    alt: "Supports future compliance by creating a heat map of room surfaces and real-time data on UV dosage, room occupation and cleaning performance",
+  },
+  {
+    src: "/images/How_it_works_4_upscaled.png",
+    alt: "Supports future compliance by creating a heat map of room surfaces and real-time data on UV dosage, room occupation and cleaning performance",
   },
 ];
 
@@ -93,7 +92,7 @@ const Carousel = () => {
             ))}
             <div className="absolute bottom-0 left-0 right-0 text-white p-4 sm:p-6 md:p-8 z-20">
               <p className="text-center paragraph text-sm sm:text-base md:text-lg">
-                {carouselItems[activeIndex].caption}
+                {carouselItems[activeIndex].alt}
               </p>
             </div>
           </div>
