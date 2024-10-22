@@ -16,8 +16,8 @@ import "leaflet-defaulticon-compatibility";
 // });
 
 const officeCoords = {
-  latitude: 34.166561,
-  longitude: -118.601913,
+  latitude: 37.389722,
+  longitude: -122.025833,
 };
 
 const position: L.LatLngTuple = [officeCoords.latitude, officeCoords.longitude]; // Change to the latitude and longitude of your office
