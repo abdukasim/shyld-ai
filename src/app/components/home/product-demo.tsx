@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
-import { motion } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
+import { useEffect, useRef } from "react";
 import ProductDemoMobile from "./product-demo-mobile";
 
 const features = [
@@ -79,10 +80,37 @@ const features = [
 ];
 
 export default function ProductDemo() {
+  const controls = useAnimation();
+  const ref = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          controls.start("visible");
+        }
+      },
+      { threshold: 0.5 }
+    );
+
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+
+    return () => {
+      if (ref.current) {
+        observer.unobserve(ref.current);
+      }
+    };
+  }, [controls]);
+
   return (
     <>
       <ProductDemoMobile />
-      <div className="hidden md:block relative w-full h-screen my-[184px] text-white">
+      <div
+        ref={ref}
+        className="hidden md:block relative w-full h-screen my-[184px] text-white"
+      >
         <h2 className="text-[32px] font-bold text-center mb-6">
           Smart Health Care by Design
         </h2>
@@ -101,9 +129,12 @@ export default function ProductDemo() {
               key={feature.name}
               className="absolute w-full h-full"
               style={{ left: `${feature.x}%`, top: `${feature.y}%` }}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 0.5 }}
+              initial="hidden"
+              animate={controls}
+              variants={{
+                visible: { opacity: 1 },
+                hidden: { opacity: 0 },
+              }}
             >
               <div className="relative h-full">
                 <motion.div
@@ -112,8 +143,18 @@ export default function ProductDemo() {
                     left: `${feature.name_x}%`,
                     top: `${feature.name_y}%`,
                   }}
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
+                  variants={{
+                    visible: {
+                      opacity: 1,
+                      x: 0,
+                      y: 0,
+                      transition: { duration: 1.2, ease: "easeOut" },
+                    },
+                    hidden: {
+                      opacity: 0,
+                      x: feature.name_x < 0 ? "25vw" : "-25vw",
+                    },
+                  }}
                 >
                   {feature.name}
                 </motion.div>
@@ -121,9 +162,13 @@ export default function ProductDemo() {
                   src={feature.line}
                   alt={`${feature.name} line`}
                   className="absolute left-0 w-auto h-auto"
-                  initial={{ opacity: 0, scaleX: 0 }}
-                  animate={{ opacity: 1, scaleX: 1 }}
-                  style={{ transformOrigin: "left" }}
+                  variants={{
+                    visible: {
+                      opacity: 1,
+                      transition: { duration: 0.5, delay: 1.2 },
+                    },
+                    hidden: { opacity: 0 },
+                  }}
                 />
               </div>
             </motion.div>
