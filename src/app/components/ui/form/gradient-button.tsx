@@ -26,7 +26,7 @@ const GradientButton: React.FC<GradientButtonProps> = ({
 
   const commonClasses = `${
     circular ? "p-[10px] rounded-full w-auto" : "px-10 py-3"
-  } rounded-full w-full md:w-auto text-center ${
+  } rounded-full md:w-auto text-center ${
     outlined ? `border border-[#00FCFF] text-${textColor}` : `text-${textColor}`
   } ${gradientClasses}`;
 

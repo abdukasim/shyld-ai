@@ -14,25 +14,25 @@ export default function Slider() {
       title: "Air Sanitization",
       description:
         "Our AI agents can detect and sanitize surfaces in real-time, ensuring a clean and safe environment for patients and staff.",
-      image: "/images/home-hero.jpeg",
+      image: "/images/surface-sanitization.png",
     },
     {
       title: "Personnel Training & Compliance",
       description:
         "Our AI agents can detect and sanitize surfaces in real-time, ensuring a clean and safe environment for patients and staff.",
-      image: "/images/hospital-room-interior.jpeg",
+      image: "/images/surface-sanitization.png",
     },
     {
       title: "Asset Tracking",
       description:
         "Our AI agents can detect and sanitize surfaces in real-time, ensuring a clean and safe environment for patients and staff.",
-      image: "/images/medic-pointing-at-tablet.jpeg",
+      image: "/images/surface-sanitization.png",
     },
     {
       title: "Patient Monitoring",
       description:
         "Our AI agents can detect and sanitize surfaces in real-time, ensuring a clean and safe environment for patients and staff.",
-      image: "/images/human-with-robot-hand.jpeg",
+      image: "/images/surface-sanitization.png",
     },
   ];
   const [currentSolution, setCurrentSolution] = useState(0);
